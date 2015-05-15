@@ -1,0 +1,8 @@
+<ul>
+  {{#each serviceStatusUpdate in model}}
+    <li>
+      {{serviceStatusUpdate.status}}
+      {{serviceStatusUpdate.created_at}}
+    </li>
+  {{/each}}
+</ul>
