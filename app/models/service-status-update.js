@@ -1,9 +1,9 @@
 import DS from 'ember-data';
-import Ember from 'ember';
 
 var ServiceStatusUpdate = DS.Model.extend({
   created_at: DS.attr('date'),
-  status: DS.attr('string')
+  status: DS.attr('string'),
+  service: DS.belongsTo('service')
 });
 
 ServiceStatusUpdate.reopenClass({

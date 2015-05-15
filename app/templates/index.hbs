@@ -1,8 +1,7 @@
 <ul>
-  {{#each serviceStatusUpdate in model}}
+  {{#each service in model}}
     <li>
-      {{serviceStatusUpdate.status}}
-      {{serviceStatusUpdate.created_at}}
+      {{service.name}}
     </li>
   {{/each}}
 </ul>
