@@ -1,0 +1,20 @@
+machine:
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+test:
+  override:
+    - ./bin/ci
+
+dependencies:
+  override:
+    - ./bin/setup
+  cache_directories:
+    - "bower_components"
+    - "~/.rvm/gems/"
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - "ember divshot push staging --token $DIVSHOT_TOKEN --org AlphaSights"

@@ -10,7 +10,9 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      }
+      },
+
+      firebase: null
     },
 
     APP: {
@@ -25,6 +27,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.EmberENV.firebase = 'https://as-lizard-dev.firebaseio.com/';
   }
 
   if (environment === 'test') {
@@ -40,7 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.EmberENV.firebase = 'https://as-lizard.firebaseio.com/';
   }
 
   return ENV;
