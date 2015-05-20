@@ -1,0 +1,23 @@
+$timeline-icon-size: 2em;
+$timeline-bar-size: 0.2em;
+$timeline-bar-color: $iron;
+$timeline-entry-height: 2em;
+
+.timeline {
+
+  .entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .icon {
+    @include icon(cog);
+
+    width: $timeline-bar-size;
+    height: $timeline-entry-height;
+    background: $timeline-bar-color;
+    text-align: center;
+  }
+}

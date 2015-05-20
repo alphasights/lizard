@@ -1,0 +1,73 @@
+body {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  background-position: center;
+  background-size: cover;
+  background-position: fixed;
+  background-image: url('http://p1.pichost.me/i/72/1969727.jpg');
+  padding: $column-gutter;
+  overflow-y: scroll;
+  position: relative;
+  z-index: 0;
+
+  &:before {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+
+  > div {
+    @extend %grid-row;
+
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+
+    > section {
+      @extend %grid-row;
+
+      background-color: rgba(0,0,0,0.7);
+      border-radius: $global-radius;
+      display: flex;
+      flex-direction: row;
+      justify-content: stretch;
+      align-content: center;
+      flex-wrap: wrap-reverse;
+
+      .content {
+        flex-grow: 6;
+      }
+
+      .side-content {
+        flex-grow: 1;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .title {
+    float: left;
+  }
+
+  .logo {
+    float: left;
+    z-index: 10;
+    position: relative;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: $vapor;
+}
