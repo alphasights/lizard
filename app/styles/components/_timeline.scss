@@ -3,7 +3,7 @@ $timeline-bar-size: 0.2em;
 $timeline-bar-color: $iron;
 $timeline-entry-height: 2em;
 
-.timeline {
+%timeline {
 
   .entry {
     display: flex;
@@ -20,4 +20,8 @@ $timeline-entry-height: 2em;
     background: $timeline-bar-color;
     text-align: center;
   }
+}
+
+.timeline {
+  @extend %timeline;
 }

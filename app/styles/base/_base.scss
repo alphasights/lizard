@@ -39,6 +39,7 @@ body {
       justify-content: stretch;
       align-content: center;
       flex-wrap: wrap-reverse;
+      overflow: hidden;
 
       .content {
         flex-grow: 6;

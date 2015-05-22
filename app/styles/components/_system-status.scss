@@ -1,0 +1,33 @@
+%system-status {
+  text-align: center;
+
+  &.is-clear {
+    .clear {
+      display: block;
+    }
+
+    .alert {
+      display: block;
+    }
+  }
+
+  .clear {
+    background-color: rgba($primary-color, .7);
+    height: $tile-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      @include icon(ok)
+    }
+  }
+
+  .alert {
+    display: none;
+  }
+}
+
+.system-status {
+  @extend %system-status;
+}
