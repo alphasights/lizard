@@ -1,0 +1,36 @@
+$clock-background-color: rgba(255, 255, 255, .3);
+
+.clock {
+  .main-clock {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .hour {
+      font-size: $h1-font-size * 2;
+    }
+
+    .date {
+      line-height: 1;
+      margin-left: $column-gutter / 2;
+      margin-top: $column-gutter;
+    }
+  }
+
+  .world-clock {
+    display: flex;
+    background-color: $clock-background-color;
+    opacity: .7;
+
+    > .item {
+      @extend %grid-column-large-4;
+
+      display: flex;
+
+      .hour {
+        margin: 0 $column-gutter;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}
