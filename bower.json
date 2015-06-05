@@ -14,5 +14,8 @@
     "qunit": "~1.17.1",
     "firebase": "^2.1.0",
     "paint": "0.7.26"
+  },
+  "resolutions": {
+    "jquery": "~1.11.1"
   }
 }

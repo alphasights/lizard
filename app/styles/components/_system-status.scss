@@ -12,10 +12,10 @@
   }
 
   .clear {
-    background-color: rgba($primary-color, .7);
-    height: $tile-size;
-    display: flex;
     align-items: center;
+    background-color: rgba($primary-color, .7);
+    display: flex;
+    height: $tile-size;
     justify-content: center;
 
     .icon {

@@ -1,7 +1,8 @@
 $tile-size: $layout-sidebar-header-height !default;
+$red: #f62f26;
 
 %tile {
-  width: $tile-size;
+  background: $red;
   height: $tile-size;
-  background: red;
+  width: $tile-size;
 }
