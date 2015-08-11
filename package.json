@@ -1,7 +1,7 @@
 {
   "name": "lizard",
   "version": "0.0.0",
-  "description": "Small description for lizard goes here",
+  "description": "Applications monitoring",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "ember build",
+    "dev": "nf start",
     "start": "ember server",
     "test": "ember test"
   },
@@ -20,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
+    "electron-prebuilt": "^0.26.1",
     "ember-cli": "1.13.8",
     "ember-cli-app-version": "0.5.0",
     "ember-cli-babel": "^5.1.3",
@@ -35,6 +37,8 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "1.13.8",
     "ember-disable-proxy-controllers": "^1.0.0",
-    "ember-export-application-global": "^1.0.3"
-  }
+    "ember-export-application-global": "^1.0.3",
+    "foreman": "^1.3.0"
+  },
+  "main": "main.js"
 }

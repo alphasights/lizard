@@ -6,6 +6,11 @@
     <title>Lizard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      window.requireNode = window.require;
+      delete window.require;
+      delete window.module;
+    </script>
 
     {{content-for 'head'}}
 
