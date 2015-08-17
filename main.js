@@ -1,8 +1,8 @@
 'use strict';
 
-var app           = require('app');
+var app = require('app');
 var BrowserWindow = require('browser-window');
-var mainWindow    = null;
+var mainWindow = null;
 
 app.on('window-all-closed', function onWindowAllClosed() {
   if (process.platform !== 'darwin') {
@@ -11,7 +11,11 @@ app.on('window-all-closed', function onWindowAllClosed() {
 });
 
 app.on('ready', function onReady() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    'web-preferences': { 'web-security': false }
+  });
 
   delete mainWindow.module;
 
