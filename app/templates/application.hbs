@@ -1,1 +1,9 @@
-{{model}}
+<section class="services">
+  <ul>
+    {{#each services as |service|}}
+      <li>
+        {{service.name}}: {{service.status}}
+      </li>
+    {{/each}}
+  </ul>
+</section>
