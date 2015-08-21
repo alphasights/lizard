@@ -9,7 +9,7 @@ export default Ember.Object.extend({
 
     setTimeout(() => {
       Ember.run(this._updateStatus.bind(this));
-    }, DELAY)
+    }, DELAY);
   },
 
   name: null,
@@ -32,7 +32,7 @@ export default Ember.Object.extend({
     }).finally(() => {
       setTimeout(() => {
         Ember.run(this._updateStatus.bind(this));
-      }, DELAY)
+      }, DELAY);
     });
   }
 });
