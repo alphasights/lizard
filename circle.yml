@@ -1,0 +1,10 @@
+machine:
+  environment:
+    PATH: "${HOME}/${CIRCLE_PROJECT_REPONAME}/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin:${PATH}"
+  node:
+    version: 0.12.4
+
+dependencies:
+  override:
+    - npm install
+    - node_modules/.bin/bower install
